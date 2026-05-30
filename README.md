@@ -1,28 +1,15 @@
 # Muhammad Raffay Asif Portfolio
 
-This is a simple GitHub Pages portfolio site built from the resume details and project screenshots.
+This repository contains my personal portfolio website, hosted with GitHub Pages. It presents my profile, selected projects, technical skills, contact information, and links to live demos or supporting project documentation.
 
-## Screenshot Files
+## Website Structure
 
-The site currently includes clean placeholder images so nothing looks broken. To use your real screenshots, put them inside the `assets` folder and update the matching image paths in `index.html`.
+The portfolio is built as a lightweight static website using only HTML and CSS:
 
-Recommended names:
+- `index.html` contains the page content, project sections, links, and contact details.
+- `style.css` controls the layout, spacing, colors, responsive design, and project card styling.
+- `assets/` stores project screenshots used throughout the portfolio.
 
-- `nerdvault.png`
-- `zombie-shooter.png`
-- `course-registration.png`
-- `smartwrite.png`
+## Design Approach
 
-## Publish on GitHub Pages
-
-1. Create a new GitHub repository named `RaffayCantCode.github.io`.
-2. Upload `index.html`, `style.css`, `README.md`, and the `assets` folder to that repository.
-3. Open the repository on GitHub.
-4. Go to `Settings`.
-5. Go to `Pages`.
-6. Under `Build and deployment`, set the source to `Deploy from a branch`.
-7. Select the `main` branch and the `/root` folder.
-8. Save.
-9. After a minute or two, your site should be live at `https://RaffayCantCode.github.io`.
-
-If you use a normal repository name instead, such as `portfolio`, your link will usually be `https://RaffayCantCode.github.io/portfolio/`.
+The design is simple, clean, and job-focused. The layout highlights projects first, uses screenshots to show real work, and keeps the visual style professional without making the page feel crowded. Project cards include short descriptions, key technologies, and clear links for recruiters or hiring teams to explore more.
