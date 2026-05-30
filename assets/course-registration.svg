@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Course registration portal preview">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="590" width="610" height="760" fill="#0ea5e9"/>
+  <rect x="142" y="136" width="300" height="54" rx="8" fill="#e5e7eb"/>
+  <text x="142" y="246" fill="#0284c7" font-family="Inter, Arial" font-size="48" font-weight="800">Course</text>
+  <text x="142" y="302" fill="#0284c7" font-family="Inter, Arial" font-size="48" font-weight="800">Registration</text>
+  <text x="142" y="358" fill="#0284c7" font-family="Inter, Arial" font-size="48" font-weight="800">Portal</text>
+  <rect x="142" y="438" width="320" height="54" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+  <rect x="142" y="514" width="320" height="54" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+  <rect x="142" y="616" width="320" height="54" rx="8" fill="#2563eb"/>
+  <text x="252" y="650" fill="#ffffff" font-family="Inter, Arial" font-size="18" font-weight="800">LOGIN</text>
+  <circle cx="895" cy="282" r="88" fill="#0284c7"/>
+  <text x="744" y="518" fill="#ffffff" font-family="Inter, Arial" font-size="34" font-weight="800">Plan your education today!</text>
+</svg>
