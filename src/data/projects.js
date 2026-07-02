@@ -1,9 +1,16 @@
+import nerdvaultImg from '../assets/nerdvault.png';
+import zombieImg from '../assets/zombie-shooter.png';
+import zombieVid from '../assets/zombie-gameplay.mp4';
+import courseImg from '../assets/course_registration.png';
+import smartwriteImg from '../assets/smartwrite.png';
+import zoltrakImg from '../assets/zoltrak.png';
+
 export const projects = [
   {
     id: "nerdvault",
     title: "NerdVault Media Platform",
     type: "Full Stack Web Platform",
-    image: "/src/assets/nerdvault.png",
+    image: nerdvaultImg,
     shortDescription: "A media discovery platform for movies, TV shows, anime, and manga.",
     description: "A media discovery platform for movies, TV shows, anime, and manga with search, watchlists, trending content, and personalized browsing. This was a passion project and is not affiliated with any course.",
     contributions: [
@@ -21,8 +28,8 @@ export const projects = [
     id: "zombie-shooter",
     title: "Nakht der Un Utoten",
     type: "Game Development",
-    image: "/src/assets/zombie-shooter.png",
-    video: "/src/assets/zombie-gameplay.mp4",
+    image: zombieImg,
+    video: zombieVid,
     videoSpeed: 3.0, // <-- You can change this number to speed up or slow down the video! (3.0 = 3x speed)
     shortDescription: "A zombie survival prototype built in Unreal Engine.",
     description: "A zombie survival prototype built in Unreal Engine with combat systems, enemy behavior, health mechanics, and player interactions. Created for my Game Design Principle course.",
@@ -41,7 +48,7 @@ export const projects = [
     id: "course-registration",
     title: "Course Registration System",
     type: "Web Application",
-    image: "/src/assets/course_registration.png",
+    image: courseImg,
     shortDescription: "A university course registration platform.",
     description: "A university course registration platform with student and admin dashboards, authentication, enrollment management, waitlists, and filtering.",
     contributions: [
@@ -59,7 +66,7 @@ export const projects = [
     id: "smartwrite",
     title: "SmartWrite AI Assistant",
     type: "Desktop Application",
-    image: "/src/assets/smartwrite.png",
+    image: smartwriteImg,
     shortDescription: "An AI writing assistant for real-time improvement.",
     description: "A desktop assistant for real-time writing improvement with typo detection, grammar correction, and short writing suggestions.",
     contributions: [
@@ -77,7 +84,7 @@ export const projects = [
     id: "zoltrak-tournament",
     title: "Zoltrak Tournament",
     type: "Web Application",
-    image: "/src/assets/zoltrak.png",
+    image: zoltrakImg,
     shortDescription: "A tournament organization and bracket management platform.",
     description: "A comprehensive tournament website created for my Web Application course.",
     contributions: [
