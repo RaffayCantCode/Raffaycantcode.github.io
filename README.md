@@ -1,15 +1,16 @@
-# Muhammad Raffay Asif Portfolio
+# React + Vite
 
-This repository contains my personal portfolio website, hosted with GitHub Pages. It presents my profile, selected projects, technical skills, contact information, and links to live demos or supporting project documentation.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Website Structure
+Currently, two official plugins are available:
 
-The portfolio is built as a lightweight static website using only HTML and CSS:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- `index.html` contains the page content, project sections, links, and contact details.
-- `style.css` controls the layout, spacing, colors, responsive design, and project card styling.
-- `assets/` stores project screenshots used throughout the portfolio.
+## React Compiler
 
-## Design Approach
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-The design is simple, clean, and job-focused. The layout highlights projects first, uses screenshots to show real work, and keeps the visual style professional without making the page feel crowded. Project cards include short descriptions, key technologies, and clear links for recruiters or hiring teams to explore more.
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
