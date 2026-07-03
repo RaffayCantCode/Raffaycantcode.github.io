@@ -5,6 +5,9 @@ import courseImg from '../assets/course_registration.png';
 import smartwriteImg from '../assets/smartwrite.png';
 import zoltrakImg from '../assets/zoltrak.png';
 
+// 🚀 Portfolio Projects Data
+// This file contains all the data for the projects displayed on the portfolio site.
+
 export const projects = [
   {
     id: "nerdvault",
