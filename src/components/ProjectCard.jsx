@@ -36,7 +36,7 @@ const ProjectCard = ({ project, index }) => {
       style={styles.card}
     >
       <div style={styles.imageContainer}>
-        <img src={project.image} alt={project.title} style={styles.image} />
+        <img src={project.image} alt={project.title} style={styles.image} loading="lazy" />
       </div>
       <div style={styles.content}>
         <div>
