@@ -1,9 +1,9 @@
-import nerdvaultImg from '../assets/nerdvault.png';
-import zombieImg from '../assets/zombie-shooter.png';
+import nerdvaultImg from '../assets/nerdvault.webp';
+import zombieImg from '../assets/zombie-shooter.webp';
 import zombieVid from '../assets/zombie-gameplay.mp4';
-import courseImg from '../assets/course_registration.png';
-import smartwriteImg from '../assets/smartwrite.png';
-import zoltrakImg from '../assets/zoltrak.png';
+import courseImg from '../assets/course_registration.webp';
+import smartwriteImg from '../assets/smartwrite.webp';
+import zoltrakImg from '../assets/zoltrak.webp';
 
 // 🚀 Portfolio Projects Data
 // This file contains all the data for the projects displayed on the portfolio site.
