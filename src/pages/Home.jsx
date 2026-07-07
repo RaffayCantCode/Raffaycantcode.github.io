@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="section container" style={styles.hero}>
+      <section className="section container hero" style={styles.hero}>
         <div className="animate-fade-in">
           <p style={styles.eyebrow} className="text-gradient-accent">Computer Games Development Student</p>
           <h1 style={styles.title}>Muhammad Raffay Asif</h1>

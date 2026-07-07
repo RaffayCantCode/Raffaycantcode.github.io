@@ -35,10 +35,10 @@ const ProjectCard = ({ project, index }) => {
       className={`glass-panel reveal ${isVisible ? 'active' : ''} ${isEven ? 'project-card-row' : 'project-card-reverse'}`} 
       style={styles.card}
     >
-      <div style={styles.imageContainer}>
+      <div className="project-card-image" style={styles.imageContainer}>
         <img src={project.image} alt={project.title} style={styles.image} loading="lazy" />
       </div>
-      <div style={styles.content}>
+      <div className="project-card-content" style={styles.content}>
         <div>
           <span style={styles.type}>{project.type}</span>
           <h3 style={styles.title}>{project.title}</h3>

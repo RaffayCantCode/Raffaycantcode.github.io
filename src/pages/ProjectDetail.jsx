@@ -60,7 +60,7 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      <div className="container section" style={styles.contentGrid}>
+      <div className="container section contentGrid" style={styles.contentGrid}>
         <div style={styles.mainContent}>
           <div className="glass-panel" style={styles.panel}>
             <h2 style={styles.sectionTitle}>Overview</h2>
