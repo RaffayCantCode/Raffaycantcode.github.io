@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ArrowRight, Code2, Gamepad2, Database, Layout, Code, User } from 'lucide-react';
+import { ArrowRight, Code2, Gamepad2, Database, Layout, Code, User, ExternalLink, ChevronRight } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
 
@@ -21,7 +21,7 @@ const Home = () => {
       <section className="section container hero" style={styles.hero}>
         <div className="animate-fade-in">
           <p style={styles.eyebrow} className="text-gradient-accent">Computer Games Development Student</p>
-          <h1 style={styles.title}>Muhammad Raffay Asif</h1>
+          <h1 className="hero-title" style={styles.title}>Muhammad Raffay Asif</h1>
           <p style={styles.lead}>
             Unreal Engine developer and full stack web developer building games,
             web apps, database-backed platforms, and practical AI tools.
@@ -49,13 +49,61 @@ const Home = () => {
             <strong style={styles.detailValue}>Bachelor's in Computer Games Development</strong>
             <span style={styles.detailSub}>Air University, Islamabad</span>
           </div>
-          <div style={styles.detailItem}>
-            <span style={styles.detailLabel}>Experience</span>
-            <strong style={styles.detailValue}>Internship at SAFEX Solutions</strong>
-            <span style={styles.detailSub}>Website Development</span>
-            <a href="https://safexsolutions.com/" target="_blank" rel="noreferrer" style={{...styles.detailSub, color: 'var(--accent-secondary)', textDecoration: 'underline', marginTop: '4px'}}>
-              safexsolutions.com
-            </a>
+        </div>
+      </section>
+
+      <section className="section container" id="experience">
+        <div style={styles.sectionHeader}>
+          <p style={styles.kicker}>Professional</p>
+          <h2 style={styles.sectionTitle}>Work Experience</h2>
+        </div>
+        
+        <div className="timeline-container" style={styles.timelineContainer}>
+          <div className="timeline-line" style={styles.timelineLine}></div>
+          <div className="timeline-item" style={styles.timelineItem}>
+            <div className="timeline-dot" style={styles.timelineDot}></div>
+            <div className="glass-panel timeline-content" style={styles.timelineContent}>
+              <div style={styles.timelineHeader}>
+                <div>
+                  <h3 style={styles.timelineRole}>Frontend Web Developer (Intern)</h3>
+              <a href="https://safexsolutions.com/" target="_blank" rel="noreferrer" style={styles.timelineCompany}>
+                SafeX Solutions <ExternalLink size={16} style={{ marginLeft: '6px' }} />
+              </a>
+            </div>
+            <div style={styles.timelineDate}>
+              2026 — Present
+            </div>
+          </div>
+              
+              <p style={styles.timelineDesc}>
+                I am currently engineering interactive web interfaces for a forward-thinking IT startup. My role is laser-focused on translating complex design requirements into butter-smooth, functional code.
+              </p>
+
+              <ul style={styles.timelineList}>
+                <li style={styles.timelineListItem}>
+                  <span style={styles.bulletHighlight}></span>
+                  Engineering dynamic UI components from scratch using React, ensuring high responsiveness across all device sizes.
+                </li>
+                <li style={styles.timelineListItem}>
+                  <span style={styles.bulletHighlight}></span>
+                  Bridging the gap between front-end visuals and robust back-end logic by consuming and handling complex REST APIs.
+                </li>
+                <li style={styles.timelineListItem}>
+                  <span style={styles.bulletHighlight}></span>
+                  Participating heavily in daily standups and sprint planning, actively pushing code through rigorous Agile pipelines.
+                </li>
+                <li style={styles.timelineListItem}>
+                  <span style={styles.bulletHighlight}></span>
+                  Slashing bugs and optimizing legacy JavaScript to squeeze out every drop of browser performance.
+                </li>
+              </ul>
+
+              <div style={styles.timelineTags}>
+                {['React.js', 'Tailwind CSS', 'JavaScript ES6+', 'API Integration', 'Agile/Scrum', 'Git'].map(tag => (
+                  <span key={tag} style={styles.timelineTag}>{tag}</span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -226,6 +274,121 @@ const styles = {
   skillText: {
     color: 'var(--text-secondary)',
     fontSize: '0.95rem',
+  },
+  timelineContainer: {
+    position: 'relative',
+    maxWidth: '1000px',
+    margin: '0 auto',
+    paddingLeft: '2.5rem',
+  },
+  timelineLine: {
+    position: 'absolute',
+    left: '0',
+    top: '2rem',
+    bottom: '0',
+    width: '4px',
+    background: 'var(--glass-border)',
+    borderRadius: '4px',
+  },
+  timelineItem: {
+    position: 'relative',
+    paddingBottom: '2rem',
+  },
+  timelineDot: {
+    position: 'absolute',
+    left: '-2.5rem',
+    top: '3rem',
+    width: '22px',
+    height: '22px',
+    background: 'var(--bg-color)',
+    border: '4px solid var(--accent-color)',
+    borderRadius: '50%',
+    transform: 'translateX(-50%)',
+    zIndex: 2,
+    boxShadow: '0 0 15px var(--accent-glow)',
+  },
+  timelineContent: {
+    padding: '3rem',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.5rem',
+  },
+  timelineHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
+    gap: '1.5rem',
+    borderBottom: '2px dashed var(--glass-border)',
+    paddingBottom: '1.5rem',
+  },
+  timelineRole: {
+    fontSize: '2rem',
+    fontWeight: 700,
+    color: 'var(--text-primary)',
+    marginBottom: '0.5rem',
+  },
+  timelineCompany: {
+    fontSize: '1.15rem',
+    color: 'var(--accent-secondary)',
+    fontWeight: 600,
+    display: 'inline-flex',
+    alignItems: 'center',
+  },
+  timelineDate: {
+    fontSize: '1.05rem',
+    fontWeight: 700,
+    color: '#10b981',
+    background: 'rgba(16, 185, 129, 0.1)',
+    border: '2px solid rgba(16, 185, 129, 0.3)',
+    padding: '0.5rem 1.25rem',
+    borderRadius: '30px',
+    letterSpacing: '1px',
+    boxShadow: '4px 4px 0px rgba(0,0,0,0.5)',
+  },
+  timelineDesc: {
+    fontSize: '1.1rem',
+    color: 'var(--text-secondary)',
+    lineHeight: 1.8,
+  },
+  timelineList: {
+    listStyle: 'none',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.25rem',
+  },
+  timelineListItem: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '1rem',
+    color: 'var(--text-secondary)',
+    fontSize: '1.05rem',
+    lineHeight: 1.6,
+  },
+  bulletHighlight: {
+    marginTop: '0.5rem',
+    width: '10px',
+    height: '10px',
+    background: 'var(--accent-secondary)',
+    borderRadius: '50%',
+    flexShrink: 0,
+    boxShadow: '0 0 10px rgba(59, 130, 246, 0.6)',
+  },
+  timelineTags: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '1rem',
+    marginTop: '1rem',
+  },
+  timelineTag: {
+    background: 'var(--bg-color)',
+    color: 'var(--text-primary)',
+    padding: '0.6rem 1.25rem',
+    borderRadius: '8px',
+    fontSize: '0.9rem',
+    fontWeight: 600,
+    border: '2px solid var(--accent-color)',
+    boxShadow: '4px 4px 0px rgba(0,0,0,0.5)',
   }
 };
 

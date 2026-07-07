@@ -219,6 +219,20 @@ a:hover {
     gap: 2rem !important;
     padding-top: 6rem !important;
   }
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+  .timeline-container {
+    padding-left: 1.5rem !important;
+  }
+  .timeline-dot {
+    left: -1.5rem !important;
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .glass-panel {
+    padding: 1.5rem !important;
+  }
   .contentGrid {
     grid-template-columns: 1fr !important;
   }
@@ -228,6 +242,6 @@ a:hover {
     min-height: 250px !important;
   }
   .project-card-content {
-    padding: 2rem !important;
+    padding: 1.5rem !important;
   }
 }

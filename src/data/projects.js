@@ -1,3 +1,6 @@
+import cinestream1Img from '../assets/cinestream1.webp';
+import cinestream2Img from '../assets/cinestream2.webp';
+import cinestream3Img from '../assets/cinestream3.webp';
 import nerdvaultImg from '../assets/nerdvault.webp';
 import zombieImg from '../assets/zombie-shooter.webp';
 import zombieVid from '../assets/zombie-gameplay.mp4';
@@ -23,7 +26,8 @@ export const projects = [
     ],
     tags: ["JavaScript", "API Integration", "Responsive UI"],
     links: [
-      { text: "Open Live Site", url: "https://nerdvault.site", primary: true }
+      { text: "Open Live Site", url: "https://nerdvault.site", primary: true },
+      { text: "View Repository", url: "https://github.com/RaffayCantCode/Nerd-Vault", primary: false }
     ],
     details: "Nerdvault is my passion project, a labor of love outside of any academic coursework. I wanted to create a sleek and performant media discovery platform to easily find information on movies, TV shows, anime, and manga. <span class='highlight-text'>It challenged me to learn about third-party API integration and optimizing performance</span> for dynamic content."
   },
@@ -46,6 +50,26 @@ export const projects = [
       { text: "See Videos & Documentation", url: "https://drive.google.com/drive/u/0/folders/1bL4pwMdt9cHrfYgn4VeDagw4dz4mYtwg", primary: false }
     ],
     details: "Developed as a project for the Game Design Principle course, 'Nakht der Un Utoten' allowed me to dive deep into Unreal Engine. <span class='highlight-text'>My main contributions were meticulously crafting the game map to ensure good flow and tension, and coding the AI that drives the zombies' pursuit and attack behaviors.</span>"
+  },
+  {
+    id: "cinestream",
+    title: "CineStream",
+    type: "Decentralized Media Aggregator",
+    image: cinestream1Img,
+    extraImages: [cinestream2Img, cinestream3Img],
+    shortDescription: "A high-performance streaming interface that aggregates open-source media links for movies and anime.",
+    description: "CineStream is a decentralized media aggregator that scrapes and indexes open-source streaming links. It provides users with a seamless, ad-free interface to discover and stream global entertainment, including movies, TV shows, and anime.",
+    contributions: [
+      "Engineered a dynamic scraper to parse and aggregate video links from decentralized open-source servers.",
+      "Designed a sleek, modern, Netflix-style user interface for effortless content discovery.",
+      "Built custom video player integrations to handle various open-source streaming protocols."
+    ],
+    tags: ["React", "API Integration", "Web Scraping", "Video Streaming"],
+    links: [
+      { text: "Open Live Site", url: "https://cine-stream.site/", primary: true },
+      { text: "View Repository", url: "https://github.com/RaffayCantCode/Cine-Stream", primary: false }
+    ],
+    details: "CineStream is a highly technical project built to solve the fragmentation of open-source media. <span class='highlight-text'>By leveraging advanced web scraping and API aggregation techniques, the platform acts as a unified search engine and player for decentralized video content.</span> I designed the architecture to seamlessly fetch, parse, and serve high-quality streams while maintaining a premium, ad-free user experience reminiscent of top-tier streaming services."
   },
   {
     id: "course-registration",

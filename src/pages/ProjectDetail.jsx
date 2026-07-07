@@ -78,6 +78,17 @@ const ProjectDetail = () => {
               ))}
             </ul>
           </div>
+
+          {project.extraImages && project.extraImages.length > 0 && (
+            <div className="glass-panel delay-200" style={styles.panel}>
+              <h2 style={styles.sectionTitle}>Gallery</h2>
+              <div style={styles.galleryGrid}>
+                {project.extraImages.map((img, idx) => (
+                  <img key={idx} src={img} alt={`${project.title} screenshot ${idx + 1}`} style={styles.galleryImage} loading="lazy" />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         <aside style={styles.sidebar}>
@@ -239,6 +250,17 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
+  },
+  galleryGrid: {
+    display: 'grid',
+    gridTemplateColumns: '1fr',
+    gap: '1.5rem',
+    marginTop: '1rem',
+  },
+  galleryImage: {
+    width: '100%',
+    borderRadius: '8px',
+    border: '1px solid var(--glass-border)',
   }
 };
 
