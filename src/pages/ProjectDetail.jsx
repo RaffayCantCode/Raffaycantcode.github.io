@@ -36,11 +36,16 @@ const ProjectDetail = () => {
           <video 
             ref={videoRef}
             src={project.video} 
+            poster={project.image}
+            preload="auto"
             autoPlay 
             loop 
             muted 
             playsInline
-            onCanPlay={(e) => { e.target.playbackRate = project.videoSpeed || 1.0; }}
+            onCanPlay={(e) => { 
+              e.target.playbackRate = project.videoSpeed || 1.0; 
+              e.target.play().catch(err => console.log('Autoplay prevented:', err));
+            }}
             style={styles.heroVideoBg}
           />
         ) : (
@@ -148,10 +153,9 @@ const styles = {
   heroVideoBg: {
     position: 'absolute',
     top: 0,
-    left: '50%',
-    width: '100vw',
+    left: 0,
+    width: '100%',
     height: '100%',
-    transform: 'translateX(-50%)',
     objectFit: 'cover',
     opacity: 0.4,
     zIndex: -1,
