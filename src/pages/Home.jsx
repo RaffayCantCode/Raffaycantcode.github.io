@@ -65,7 +65,7 @@ const Home = () => {
             <div className="glass-panel timeline-content" style={styles.timelineContent}>
               <div style={styles.timelineHeader}>
                 <div>
-                  <h3 style={styles.timelineRole}>Frontend Web Developer (Intern)</h3>
+                  <h3 style={styles.timelineRole}>Website Development (Intern)</h3>
               <a href="https://safexsolutions.com/" target="_blank" rel="noreferrer" style={styles.timelineCompany}>
                 SafeX Solutions <ExternalLink size={16} style={{ marginLeft: '6px' }} />
               </a>
@@ -76,30 +76,30 @@ const Home = () => {
           </div>
               
               <p style={styles.timelineDesc}>
-                I am currently engineering interactive web interfaces for a forward-thinking IT startup. My role is laser-focused on translating complex design requirements into butter-smooth, functional code.
+                I am currently working on website development for a forward-thinking IT startup. My role involves building new web projects from scratch and enhancing existing websites.
               </p>
 
               <ul style={styles.timelineList}>
                 <li style={styles.timelineListItem}>
                   <span style={styles.bulletHighlight}></span>
-                  Engineering dynamic UI components from scratch using React, ensuring high responsiveness across all device sizes.
+                  Developing and launching responsive websites from scratch to meet various client needs.
                 </li>
                 <li style={styles.timelineListItem}>
                   <span style={styles.bulletHighlight}></span>
-                  Bridging the gap between front-end visuals and robust back-end logic by consuming and handling complex REST APIs.
+                  Maintaining and updating existing websites by integrating new features and improving designs.
                 </li>
                 <li style={styles.timelineListItem}>
                   <span style={styles.bulletHighlight}></span>
-                  Participating heavily in daily standups and sprint planning, actively pushing code through rigorous Agile pipelines.
+                  Troubleshooting technical issues and optimizing web pages for better performance and user experience.
                 </li>
                 <li style={styles.timelineListItem}>
                   <span style={styles.bulletHighlight}></span>
-                  Slashing bugs and optimizing legacy JavaScript to squeeze out every drop of browser performance.
+                  Collaborating with the team to connect frontend layouts with functional back-end APIs.
                 </li>
               </ul>
 
               <div style={styles.timelineTags}>
-                {['React.js', 'Tailwind CSS', 'JavaScript ES6+', 'API Integration', 'Agile/Scrum', 'Git'].map(tag => (
+                {['React', 'Node.js', 'JavaScript', 'Git', 'API Integration'].map(tag => (
                   <span key={tag} style={styles.timelineTag}>{tag}</span>
                 ))}
               </div>
